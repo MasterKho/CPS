@@ -1,0 +1,137 @@
+.content {
+    width: 100%;
+    height: 416px;
+    min-width: 320px;
+    display: flex;
+    flex-direction: column;
+    background: #f8f8f8;
+   
+  }
+  
+  .content__title {
+    align-items: center;
+    margin: 24px 24px 40px;
+    width: 100%;
+    font-size: 28px;
+  }
+  
+  .content__title:before{
+    content: " ";
+    height: 40px;;
+    border-left: 4px solid #a3ffe7;
+    border-radius: 0 5px 5px 0;
+    margin-right: 24px;
+    margin-left: -24px;
+  }
+  
+  .content__nav{
+  width: 100%;
+  }
+  
+  .content__links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0 16px;
+  }
+  
+  .content__link{
+    align-items: baseline;
+    letter-spacing: -0.2px;
+    white-space: nowrap;
+    color: #7e7e82;
+    font-size: 16px;
+    
+  }
+  
+  .link-first {
+    background: #ffffff;
+    border: 2px solid #b8ffec;
+    box-sizing: border-box;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 16px;
+    color: #7e7e82;
+  }
+  
+  .content__sidebar{
+    width: 100%;
+    height: 208px;
+    display: flex;
+    margin-top: 32px;
+    
+  
+  }
+  .content__text {
+    width: 100%;
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 24px;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0.2px;
+    color: #1b1c21;
+  }
+  
+  .content__subtitle {
+    white-space: nowrap;
+    margin: 10px;
+    height: 24px;
+  }
+  
+  
+  .content__subtitle:before{
+    content: '';
+    position: absolute;
+    height: 5px;
+    width: 2px;
+    background: #a3ffe7;
+    transform: skew(0deg, -40deg);
+    border-radius: 5px 5px 5px 0;
+  }
+  
+  .content__subtitle::after{
+    content: '';
+    position: absolute;
+    height: 5px;
+    width: 2px;
+    background: #a3ffe7;
+    transform: skew(0deg, -40deg);
+    border-radius: 5px 5px 0;
+  }
+  
+  
+  .content__image {
+    width: 100%;
+    border-radius: 5px;
+    margin-right: 40px;
+  }
+  
+  .content__links + .content__links {
+    margin-left: 20px;
+  }
+  
+  
+  @media (max-width: 320px) and (max-width: 768px) {
+    .content {
+      width: 100%;
+    }
+  
+    .content__links{
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      padding: 15px;
+    }
+    
+    .content__text ~ p.content__subtext{
+      display: none;
+    }
+  
+  }
+  
+  @media (max-width: 320px) and (max-width: 668px){
+    
+  }
