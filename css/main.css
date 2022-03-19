@@ -8,6 +8,7 @@
    
   }
   
+  /*title start*/
   .content__title{
     width: 288px;
     height: 40px;
@@ -36,15 +37,19 @@
     
   }
   
+  /*title end*/
+
+
 /* nav start*/
   .content__nav{
   width: 100%;
   }
   
-  .content__links  {
+  .content__links {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items:baseline
   }
   
 
@@ -58,6 +63,12 @@
   }
 
 
+  .content__link.active {
+    display: inline-block;
+    border:#a3ffe7 2px solid;
+    padding: 8px;
+    border-radius: 6px;
+  }
   
 /*nav end*/
 
@@ -116,7 +127,7 @@
   }
   
   .content__links + .content__links {
-    margin-left: 20px;
+    margin-left: 16px;
   }
   
  /* 
