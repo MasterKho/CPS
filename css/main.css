@@ -17,6 +17,7 @@
   
   .content__title:before{
     content: " ";
+    width: 248px;
     height: 40px;;
     border-left: 4px solid #a3ffe7;
     border-radius: 0 5px 5px 0;
@@ -26,14 +27,16 @@
   
   .content__nav{
   width: 100%;
-  margin-left: 24px;
+  margin-left: 16px;
+  position: relative;
+  
   }
   
-  .content__links {
+  .content__links a {
+    position:relative;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    margin: 0;
+    justify-content: space-between;
   }
   
   .content__link{
@@ -116,41 +119,62 @@
   
   @media (max-width: 320px) and (max-width: 768px) {
     .content {
+      display: flex;
+      position: sticky;
       width: 100%;
     }
+   
   
     .content__links{
       width: 100%;
       display: flex;
       flex-direction: row;
       justify-content: space-around;
-      padding: 15px;
+      position: sticky;
+    
     }
     
     .content__text ~ p.content__subtext{
       display: none;
     }
-  
+  .content__sidebar {
+    display: flex;
+  }
   }
   
-  @media  (max-width: 700px) {
-    .content__nav{
-        display: flex;
-        position: sticky;
+  @media  (max-width: 740px) {
+    .content {
+      display: flex;
+      width: 100%;
+    }
+
+    .content-nav{
+      display: inline-block;
+      position: absolute;
+
+    }
+
+    .content__links{
+      width: 100%;
+      display: flexbox;
+      flex-direction: row;
+      justify-content: space-around;
+      position:sticky;
     }
   }
 
-  @media  (max-width: 320px) and (max-width: 480px) {
+
+
+
+  @media  (max-width: 320px) {
     .content{
       width: 100%;
       height: 597px ;
       display: flex;
-  
   }
 
   .content__nav{
     display: flex;
-    margin-left: 213px;
   }
 
   .content__links{
