@@ -80,7 +80,6 @@
   }
 
   .content__text--main{
-    position: relative;
     width: 100%;
     padding: 0 16px 0 16px;
     font-size: 14px;
@@ -144,7 +143,7 @@
   @media (min-width: 320px) and (max-width: 784px) {
     .content {
       width: 100%;
-      height: 504px;
+      height: 416px;
     }
 
     .content__title {
@@ -161,23 +160,30 @@
     }
 
     .content__sidebar{
+      display: flex;
+      flex-direction: row;
       width: 100%;
       margin: 0;
       padding: 0;
     }
 
     .content__text {
-      float: right;
+      width: 100%;
+      height: 160px;
     }
 
     .content__text--main {
-      margin: 32px 0px 0px 24px;
-      padding: 0;
+      margin: 32px 48px 0px 24px;
+      padding-left: 0;
+      padding-right: 48px;
     }
 
     .content__subtext{
       display: block;
       margin-left: 24px;
+      padding-left: 0;
+      font-size: 14px;
+  
     }
 
     .content__subtitle {
@@ -185,14 +191,19 @@
     }
     
     .content__subtitle::before {
-    top: 346px;
+    top: 402px;
+    left: 32px;
     }
 
     .content__subtitle::after {
-      top: 352px;
+      top: 407px;
+      left: 32px;
     }
 
-  
+    .content__image{
+     margin-right: 40px;
+    }
+
   }
 
 
