@@ -135,7 +135,7 @@
 
 /*image start*/
   .content__image {
-    background-image: url('/assets/img/_MG_3223.jpg');
+    background-image: url('..assets/img/_MG_3223.jpg');
     width: 100%;
     border-radius: 5px;
     margin-top: 5%;
