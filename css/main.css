@@ -161,17 +161,38 @@
     }
 
     .content__sidebar{
+      width: 100%;
       margin: 0;
       padding: 0;
     }
 
-    .content__text--main {
-      margin: 32px 0px 0px 8px;
+    .content__text {
+      float: right;
     }
 
+    .content__text--main {
+      margin: 32px 0px 0px 24px;
+      padding: 0;
+    }
 
-   
+    .content__subtext{
+      display: block;
+      margin-left: 24px;
+    }
 
+    .content__subtitle {
+      margin: 10px 0 54px 57px;
+    }
+    
+    .content__subtitle::before {
+    top: 346px;
+    }
+
+    .content__subtitle::after {
+      top: 352px;
+    }
+
+  
   }
 
 
